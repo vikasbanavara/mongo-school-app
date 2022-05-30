@@ -14,6 +14,7 @@ public class Student {
 	private int age;
 	private double percentage;
 	private LocalDateTime dob;
+	private Pan pan;
 	
 	public int getId() {
 		return id;
@@ -45,7 +46,12 @@ public class Student {
 	public void setDob(LocalDateTime dob) {
 		this.dob = dob;
 	}
-	
+	public Pan getPan() {
+		return pan;
+	}
+	public void setPan(Pan pan) {
+		this.pan = pan;
+	}
 	
 
 }

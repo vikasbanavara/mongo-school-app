@@ -20,4 +20,12 @@ public class StudentDao {
 	public List<Student> getAllStudent() {
 		return repository.findAll();
 	}
+	
+	public List<Student> getByStuName(String name) {
+		return repository.getStudentForName(name);
+	}
+	
+	public Student getByPanName(String name) {
+		return repository.getStudentForPanName(name);
+	}
 }
